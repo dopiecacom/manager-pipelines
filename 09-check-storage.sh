@@ -25,19 +25,3 @@ fi
 
 check_storage_exist
 
-
-
-#if [ -z "$(ls -A $APP_DIR)" ]; then
-#   echo "Empty App folder!"
-#
-#else
-#  if git rev-parse --is-inside-work-tree 2>/dev/null;then
-#
-#      echo "pizda";
-#
-#    else
-#      echo "No git repo in folder. Initializing..."
-#      get_repo
-#  fi
-#fi
-
