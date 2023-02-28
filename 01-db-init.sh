@@ -12,6 +12,8 @@ MARIADB_ROOT_PASSWORD=$(cat $MARIADB_ROOT_PASSWORD_FILE)
 
 
 mariadb -h db -uroot -p"$MARIADB_ROOT_PASSWORD" < <(envsubst < "$SQL_TEMPLATES_DIR_PATH/create-users.sql.template")
+mariadb -h db -uroot -p"$MARIADB_ROOT_PASSWORD" < <(envsubst < "$SQL_TEMPLATES_DIR_PATH/create-database.sql.template")
+
 
 
 
