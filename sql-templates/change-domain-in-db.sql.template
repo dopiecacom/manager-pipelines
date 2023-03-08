@@ -1,0 +1,9 @@
+USE $MARIADB_DATABASE;
+
+UPDATE wp_options
+SET option_value='$PROTOCOL://$DOMAIN_PREFIX$DOMAIN_NAME_URL'
+WHERE option_name='siteurl';
+
+UPDATE wp_options
+SET option_value='$PROTOCOL://$DOMAIN_PREFIX$DOMAIN_NAME_URL'
+WHERE option_name='home';
